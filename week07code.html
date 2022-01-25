@@ -1,0 +1,120 @@
+<html>
+<title> Week 7 code </title>
+<head> 
+</head>
+<body>
+<h1> Week 07 Code 1: Inline JavaScript </h1>
+<br>
+<a href="#" onclick="alert('Hi this is my Inline JavaScript');"> Click me </a>
+</body>
+</html>
+
+<html>
+<body>
+<h1> Week 07 Code 2: Internal JavaScript </h1>
+<script>
+document.write('Hi this is my Internal JavaScript');
+
+
+</script>
+</body>
+</html>
+
+<html>
+<body>
+<h1> Week 07 Code 3: External JavaScript </h1>
+
+<script src="week07code_external.js">
+
+
+</script>
+</body>
+</html>
+
+
+<html>
+<body>
+<h1> Week 07 Code 4: Popup windows </h1>
+
+</body>
+
+<script>
+/*alert("this is my alert window");
+confirm("This is my confirm window");
+prompt("This is my prompt window");*/
+</script>
+</html>
+
+<html>
+<body>
+<h1> Week 07 Code 5: Show variables & Match Functions </h1>
+<script>
+/* declare the variable */
+var a = 10;
+var b = 10;
+
+
+
+/* apply math function */
+
+
+document.write(a +" * "+ b +" = "+ a*b);
+document.write("<br>");
+document.write(a +" / "+ b +" = "+ a/b);
+document.write("<br>");
+document.write(a +" + "+ b +" = "+ (a +b));
+document.write("<br>");
+document.write(a +" - "+ b +" = "+ (a-b));
+</script>
+</body>
+</html>
+
+<html>
+<body>
+
+<h1> Week 07 Code 7: Input from user for calculation </h1>
+<form>
+Number1: <input type="text" id="n1">
+<br>
+<br>
+Number2: <input type="text" id="n2">
+<br>
+<br>
+<input type="button" onclick="cal(n1, n2)" Value="Addition">
+<input type="button" onclick="subfunction(n1, n2)" Value="Subtraction">
+<input type="button" onclick="divfunction(n1, n2)" Value="Division">
+<input type="button" onclick="multifunction(n1, n2)" Value="Multiplication">
+<p> The Result is: <span id="result"></span></p>
+
+
+
+</form>
+<script>
+    function cal()
+     {
+     var num1 = document.getElementById("n1").value;
+     var num2 = document.getElementById("n2").value;
+     document.getElementById("result").innerHTML = +num1 + +num2;
+     
+
+     
+      } 
+
+    function cal()
+     {
+     var num1 = document.getElementById("n1").value;
+     var num2 = document.getElementById("n2").value;
+     document.getElementById("result").innerHTML = +num1 - +num2;
+     }
+    
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
