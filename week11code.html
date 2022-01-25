@@ -1,0 +1,122 @@
+<html>
+<title> Week 11 Code </title>
+<head> </head>
+<body>
+<h2> Week 11 Code 01: Javascript Objects </h2>
+<p id="demo"> </p>
+<p id="demo1"> </p>
+
+<script>
+   var student = {
+                   fname: "Ashton",
+                   lname: "Chiang",
+                   City:  "Houston"
+
+                   }
+
+   
+   document.getElementById("demo").innerHTML= "First Method = "+student.fname+" "+student.lname+" lives in "+student.City;
+
+   document.getElementById("demo1").innerHTML= "Second Method = "+student["fname"]+" "+student["lname"];
+
+</script>
+</body>
+</html>
+
+
+<html>
+<body>
+<h2> Week 11 Code -2: HTML Elements Information by JS </h2>
+<form id="f1">
+<input type="text" id="uname">
+<input type="text" id="pname">
+</form>
+
+<form id="f2">
+</form>
+<form id="f3">
+</form>
+<form id="f4">
+</form>
+<h3> How many forms in this HTML Code? </h3>
+<p id="fdemo1"> </p>
+
+<h3> How many elements in this f1 form? </h3>
+<p id="fdemo2"> </p>
+<script>
+
+document.getElementById("fdemo1").innerHTML = document.forms.length;
+document.getElementById("fdemo2").innerHTML = document.getElementById("f1").elements.length;
+
+</script>
+
+
+</body>
+</html>
+
+
+<head>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<h2> Week 11 Code 03: JQuery with HTML </h2>
+
+<p> Show list items </p>
+  <ul id="mylist">
+    <li> CIS 2336 </li>
+    <li> CIS 2334 </li>
+    <li> CIS 3343 </li>
+    <li> CIS 3365 </li>
+  </ul>
+
+<script>
+
+  $ (function()
+   {
+    $("#mylist").css("border","1px dashed gray");
+    $("#mylist").css("width","150px");
+    $("li:odd").css("color","red");
+    $("li:even").css("color","green");
+
+    });
+
+
+
+</script>
+</body>
+</html>
+
+
+<html>
+<body>
+
+<h2> Week 11 Code 04: Display form data on the same webpage </h2>
+<form>
+  First name: <input type="text" id="fname">
+  <br>
+  Last name:  <input type="text" id="lname">
+  <br>
+  <br>
+  <input type="submit" onclick="showinput()" value="Click Me">
+</form>
+<p id="disp1"></p>
+<p id="disp2"></p>
+
+</body>
+
+<script>
+    function showinput()
+    {
+     document.getElementById("disp1").innerHTML = document.getElementById("fname").value;
+     document.getElementById("disp2").innerHTML = document.getElementById("lname").value;
+     }
+
+
+
+</script>
+</html>
+
+
+
+

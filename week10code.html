@@ -1,0 +1,143 @@
+<html>
+<title> Week 10 code </title>
+<head>
+</head>
+<body>
+<h1> Week 10 Code 01: Checking of Leap Year by JavaScript </h1>
+<!--- year % 400 = 0 ; year % 100 != 0, year % 4 == 0 -->
+
+<script>
+   var yr=2020;
+     // check leap year
+     if ( (yr % 400 == 0) || ( (yr % 100 != 0) && (yr % 4 == 0)) )
+          {
+           document.write(yr +" is leap year");
+
+
+            }
+            else
+            {
+             document.write(yr +" is not a leap year");
+
+             }
+
+
+
+</script>
+
+
+</body>
+</html>
+
+<html>
+
+<head>
+</head>
+<body>
+<h1> Week 10 Code 02: Reverse Function </h1>
+
+<script>
+var newStr ="";
+var theStr ="Ashton";
+var strln = theStr.length;
+document.write(strln);
+document.write("<br>");
+for (strln ; strln > 0; strln--)
+{
+   // a = a+1 ; a+=1;
+   newStr += theStr.substring(strln-1,strln);
+   
+ }
+   document.write("Old String = "+theStr);
+   document.write("<br> Reverse String = "+newStr);
+
+
+
+
+</script>
+
+</body>
+</html>
+
+<html>
+
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"> </script>
+</head>
+<body>
+<h1> Week 10 Code 03: JQuery </h1>
+
+<p id="p1"> This is my first para </p>
+<p id="p2"> This is second para </p>
+<P id="p3"> This is my third para </P>
+
+</body>
+
+<script>
+  $(document).ready (function () {
+
+     //highlight element with id mark
+     $("#p1").css("background","yellow");
+     $("#p2").css("background","blue");
+     $("#p3").css("background","pink");
+     
+
+     });
+
+
+</script>
+</html>
+
+
+
+<html>
+
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"> </script>
+</head>
+<body>
+<h1> Week 10 Code 04:Button functions using JQuery </h1>
+<p> This is my first para </p>
+<p> This is second para </p>
+<P> This is my third para </P>
+<input type="button" class="hide-btn" value="Hide Me">
+<input type="button" class="show-btn" value="Show Me">
+<input type="button" class="color-btn" value="Color Me">
+
+</body>
+
+<script>
+  $(document).ready(function()
+   {
+    //hide para
+    $(".hide-btn").click(function()
+      {
+       $("p").hide();
+
+       });
+
+     $(".show-btn").click(function()
+      {
+       $("p").show();
+
+       });
+
+       $(".color-btn").click(function()
+      {
+       $("p").css("background","yellow");
+
+       });
+
+
+
+    });
+
+
+
+
+</script>
+</html>
+
+
+
+
